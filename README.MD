@@ -32,5 +32,3 @@ A modern Snake Game implemented in vanilla JavaScript with support for:
 2. Open `index.html` in a web browser.
 3. Use the input fields to set grid size (10 to 30).
 4. Press `Start` to begin playing.
-
-## 🧑‍💻 Files Structure
