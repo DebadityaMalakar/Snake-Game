@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+.controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.control-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-group label {
+  font-weight: bold;
+}
+
+.control-group input {
+  width: 50px;
+  padding: 4px;
+  text-align: center;
+}
+
+.control-group button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#game-message {
+  color: red;
+  margin-left: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer {
+  display: grid;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.snake-head {
+  background: green;
+}
+
+.snake-body {
+  background: lightgreen;
+}
+
+.apple {
+  background: red;
+}
+
+.golden-apple {
+  background: gold;
+}
+
+.berry {
+  background-color: black;
+}
+.berry-fade {
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}

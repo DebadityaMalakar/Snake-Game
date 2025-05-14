@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+  <!--
+    @file Snake Game HTML
+    @description The main HTML structure for the Snake game including controls, score info, and game arena.
+  -->
+</head>
+<body>
+  <!--
+    @section Controls Panel
+    @description Contains grid size inputs and the Start/Reset button.
+  -->
+  <div class="controls">
+    <div class="control-group">
+      <!--
+        @input Grid X
+        @description Input field for setting the grid's width (X axis), range 10-30.
+      -->
+      <label>
+        Grid X:
+        <input type="number" id="grid-x" value="10" min="10" max="30">
+      </label>
+
+      <!--
+        @input Grid Y
+        @description Input field for setting the grid's height (Y axis), range 10-30.
+      -->
+      <label>
+        Grid Y:
+        <input type="number" id="grid-y" value="10" min="10" max="30">
+      </label>
+
+      <!--
+        @button Start / Reset
+        @description Button to start a new game or reset the current one.
+      -->
+      <button id="start-btn">Start / Reset</button>
+    </div>
+
+    <!--
+      @section Score and Messages
+      @description Displays current score, highscore, and game status messages.
+    -->
+    <div class="info">
+      <!--
+        @span Score Display
+        @description Shows the current score.
+      -->
+      <span id="score">Score: 0</span>
+
+      <!--
+        @span Highscore Display
+        @description Shows the highest score stored in localStorage.
+      -->
+      <span id="highscore">Highscore: 0</span>
+
+      <!--
+        @span Game Message
+        @description Displays messages like "Game Over" or pause status.
+      -->
+      <span id="game-message"></span>
+    </div>
+  </div>
+
+  <!--
+    @section Game Arena
+    @description The container where the snake grid will be rendered dynamically.
+  -->
+  <div class="container">
+    <div id="arena"></div>
+  </div>
+
+  <!--
+    @script index.js
+    @description Main JavaScript file containing the game logic.
+  -->
+  <script src="index.js"></script>
+</body>
+</html>
